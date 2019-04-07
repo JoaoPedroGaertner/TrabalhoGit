@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Trabalho_Tarefas</title>	 
+		<link rel="stylesheet" href="css.css">
+	</head>
+	<body>
+	<br>
+		<div class ="titulos">
+			<h2 class="sub">GIT</h2>
+		</div>
+		<br>
+		<div class="titulos">
+			<h2 class="sub">O que é o GIT?</h2><br>
+			<h3>&nbsp;&nbsp;&nbsp;&nbsp;Git é um sistema de controle de versão de arquivos. Através deles podemos desenvolver projetos na qual diversas pessoas podem contribuir simultaneamente no mesmo, editando e criando 
+			novos arquivos e permitindo que os mesmos possam existir sem o risco de suas alterações serem sobrescritas.<br><br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;Uma das aplicações do git é permitir que um arquivo possa ser editado ao mesmo tempo por pessoas diferentes.<br><br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;Outro fator importante do git é a possibilidade de criar, a qualquer momento, vários snapshots do seu projeto, ou como chamamos mais “nerdmenete”, branch. Suponha que o seu projeto seja 
+			um site html, e você deseja criar uma nova seção no seu código HTML, mas naquele momento você não deseja que estas alterações estejam disponíveis para mais ninguém, só para você. Isso é, 
+			você quer alterar o projeto (incluindo vários arquivos nele), mas ainda não quer que isso seja tratado como “oficial” para outras pessoas, então vc cria um branch (como se fosse uma cópia 
+			espelho) e então trabalha apenas nesse branch, até acertar todos os detalhes dele. Após isso, você pode fazer um merge de volta do seu branch até o projeto original.
+		</div>
+		<br><br>
+		<div class="titulos">
+		<h2 class="sub">Como usar o GIT?</h2><br>
+			<h3>&nbsp;&nbsp;&nbsp;&nbsp;Para começar a usar o git, primeiramente precisamos configurar o nosso github com o cmd, para isso é necessário usar os seguintes comandos:<br><br>
+
+			&nbsp;&nbsp;&nbsp;&nbsp;<span class="comandos"> git config --global user.name "YOUR NAME"</span><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;<span class="comandos"> git config --global user.email "YOUR EMAIL ADDRESS"</span><br><br>
+
+			&nbsp;&nbsp;&nbsp;&nbsp;Após isso, utiliza-se o comando (git clone “link do seu repositório”) para criar uma pasta onde você irá colocar todos os arquivos após serem editados.
+			Com a pasta do repositório já na sua máquina, os seguintes comandos abaixo vão ser de extrema importância, pois todo o processo gira em torno deles.<br><br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;<span class="comandos">git add "arquivos..."</span> Este comando adiciona o(s) arquivo(s) em um lugar que chamamos de INDEX, que funciona como uma área do git no qual os arquivos possam ser enviados ao Github. 
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;É importante saber que ADD não está adicionando um arquivo novo ao repositório, mas sim dizendo que o arquivo (sendo novo ou não) está sendo preparado para entrar na próxima revisão do 
+			repositório.<br><br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;<span class="comandos">git commit -m "comentário qualquer"</span> Este comando realiza o que chamamos de “commit”, que significa pegar todos os arquivos que estão naquele lugar INDEX que o comando add adicionou e 
+			criar uma revisão com um número e um comentário, que será vista por todos.
+			git push Push (empurrar) é usado para publicar todos os seus commits para o github. Neste momento, será pedido a sua senha.
+			Caso você tenha errado o comentário existe um comando para arruma-lo, porem este só irá funcionar caso o comando GIT PUSH ainda não tenha sido utilizado. Este comando é:<br><br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;<span class="comandos"> git commit –amend</span><br><br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;O git commit --amend modifica a mensagem do commit mais recente, ou seja, o último commit feito por você no projeto. Além de você mudar a mensagem do commit, você consegue adicionar 
+			arquivos que você se esqueceu ou retirar arquivos comitados por engano. O git cria um commit totalmente novo e corrigido.<br><br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;Ainda existe um comando importante neste processo, que é o <span class="comandos">git pull</span>. Ele é usado para trazer todas as modificações que estão no github para o seu projeto local. Isso é vital quando 
+			existem projetos mantidos por mais de uma pessoa, ou se você possui duas máquinas e precisa manter a sincronia entre elas. Supondo que você possui uma máquina no trabalho e outra em casa.  
+			Ambas têm o repositório local ligado ao github. Quando você executar um git push em uma das máquinas, terá que realizar um git pull na outra.</h3>
+
+		</div>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
